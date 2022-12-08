@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670311340363' stop='1670311359074'>
+    <name>TC 22 : Add to cart </name>
+    <title>TC 22 : Add to cart </title>
+    <test-cases>
+        <test-case start='1670311340366' status='failed' stop='1670311359072'>
+            <name>1 Add to cart from Recommended items</name>
+            <title>1 Add to cart from Recommended items</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: element ("p>a[href='/view_cart']") still not displayed after 10000ms</message>
+                <stack-trace>    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/22addCartRecommended.test.js:22:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

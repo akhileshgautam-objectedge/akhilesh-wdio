@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670494650252' stop='1670494693283'>
+    <name>TC 8 :  Verifying Product Description Page</name>
+    <title>TC 8 :  Verifying Product Description Page</title>
+    <test-cases>
+        <test-case start='1670494650254' status='passed' stop='1670494663129'>
+            <name>1 Verify PDP page</name>
+            <title>1 Verify PDP page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670494663129' status='failed' stop='1670494693281'>
+            <name>2 Verify that product detail is visible: product name, category, price, availability, condition, brand</name>
+            <title>2 Verify that product detail is visible: product name, category, price, availability, condition, brand</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "a[href='/product_details/1']" because element wasn't found</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/8productPdp.test.js:24:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

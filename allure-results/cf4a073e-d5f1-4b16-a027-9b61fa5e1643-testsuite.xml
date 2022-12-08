@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670494915878' stop='1670494930241'>
+    <name>TC 8 :  Verifying Product Description Page</name>
+    <title>TC 8 :  Verifying Product Description Page</title>
+    <test-cases>
+        <test-case start='1670494915879' status='passed' stop='1670494929839'>
+            <name>1 Verify PDP page</name>
+            <title>1 Verify PDP page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670494929840' status='passed' stop='1670494930240'>
+            <name>2 Verify that product detail is visible: product name, category, price, availability, condition, brand</name>
+            <title>2 Verify that product detail is visible: product name, category, price, availability, condition, brand</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

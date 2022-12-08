@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670485957717' stop='1670486032435'>
+    <name>TC 6 : Contact Us Page</name>
+    <title>TC 6 : Contact Us Page</title>
+    <test-cases>
+        <test-case start='1670485957719' status='passed' stop='1670486020356'>
+            <name>1 Verifying Contact Us Page</name>
+            <title>1 Verifying Contact Us Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670486020356' status='passed' stop='1670486021876'>
+            <name>2 Upload file</name>
+            <title>2 Upload file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670486021876' status='failed' stop='1670486032433'>
+            <name>3 Verify success message is visible</name>
+            <title>3 Verify success message is visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect $(`.status.alert`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>error properties: Object({ matcherResult: Object({ pass: false, message: 'Expect $(`.status.alert`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"' }) })
+                Error: Expect $(`.status.alert`) to be displayed
+                Expected: "displayed"
+                Received: "not displayed"
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/6contactUs.test.js:35:42)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

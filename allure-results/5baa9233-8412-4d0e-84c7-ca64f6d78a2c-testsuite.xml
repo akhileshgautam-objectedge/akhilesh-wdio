@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670497559847' stop='1670497572475'>
+    <name>TC 22 : Add to cart </name>
+    <title>TC 22 : Add to cart </title>
+    <test-cases>
+        <test-case start='1670497559849' status='passed' stop='1670497572474'>
+            <name>1 Add to cart from Recommended items</name>
+            <title>1 Add to cart from Recommended items</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

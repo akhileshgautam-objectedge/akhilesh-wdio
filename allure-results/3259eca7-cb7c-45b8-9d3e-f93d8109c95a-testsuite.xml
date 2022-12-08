@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670264571612' stop='1670264616467'>
+    <name>TC 23: Verify address details</name>
+    <title>TC 23: Verify address details</title>
+    <test-cases>
+        <test-case start='1670264571614' status='failed' stop='1670264616465'>
+            <name>1  Verify address details in checkout page</name>
+            <title>1  Verify address details in checkout page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Address mismatch! thrown</message>
+                <stack-trace>null</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

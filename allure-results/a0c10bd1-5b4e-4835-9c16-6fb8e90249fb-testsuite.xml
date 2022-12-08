@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670392458090' stop='1670392530213'>
+    <name>TC 2 : Login User</name>
+    <title>TC 2 : Login User</title>
+    <test-cases>
+        <test-case start='1670392458092' status='passed' stop='1670392474532'>
+            <name>1 Login with correct credentials</name>
+            <title>1 Login with correct credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670392474534' status='failed' stop='1670392514548'>
+            <name>2 Login with Incorrect credentials</name>
+            <title>2 Login with Incorrect credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "a[href='/login']" because element wasn't found</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/2loginUser.test.js:20:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670392514551' status='passed' stop='1670392530211'>
+            <name>3 Delete Sccount</name>
+            <title>3 Delete Sccount</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5debf521-38ab-4a1f-b550-58b144258d1a-attachment.png' type='image/png' size='544787'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

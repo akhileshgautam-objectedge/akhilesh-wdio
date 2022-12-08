@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670500315811' stop='1670500361742'>
+    <name>TC 16 : Place Order</name>
+    <title>TC 16 : Place Order</title>
+    <test-cases>
+        <test-case start='1670500315813' status='failed' stop='1670500361741'>
+            <name>1 Place Order: Login before Checkout</name>
+            <title>1 Place Order: Login before Checkout</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect $(`.fa.fa-user`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>error properties: Object({ matcherResult: Object({ pass: false, message: 'Expect $(`.fa.fa-user`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"' }) })
+                Error: Expect $(`.fa.fa-user`) to be displayed
+                Expected: "displayed"
+                Received: "not displayed"
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/16placeOrderLoginBeforeCheckout.test.js:21:43)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

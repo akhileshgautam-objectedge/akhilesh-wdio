@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670499849469' stop='1670499910172'>
+    <name>TC 3 : Login with Incorrect Credentials</name>
+    <title>TC 3 : Login with Incorrect Credentials</title>
+    <test-cases>
+        <test-case start='1670499849472' status='failed' stop='1670499910168'>
+            <name>Login with Incorrect credentials</name>
+            <title>Login with Incorrect credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-18'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: element ("form > p[style="color: red;"]") still not displayed after 10000ms</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/3loginWithIncorrect.test.js:17:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

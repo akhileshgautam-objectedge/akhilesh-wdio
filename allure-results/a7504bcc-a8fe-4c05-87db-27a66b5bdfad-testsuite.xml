@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670242943095' stop='1670242970400'>
+    <name>TC 4 : Logout User</name>
+    <title>TC 4 : Logout User</title>
+    <test-cases>
+        <test-case start='1670242943097' status='failed' stop='1670242970391'>
+            <name>Logout User</name>
+            <title>Logout User</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect window to have url containing
+                
+                Expected: "https://automationexercise.com/login"
+                Received: "https://automationexercise.com/"</message>
+                <stack-trace>error properties: Object({ matcherResult: Object({ pass: false, message: 'Expect window to have url containing
+                
+                Expected: "https://automationexercise.com/login"
+                Received: "https://automationexercise.com/"' }) })
+                Error: Expect window to have url containing
+                Expected: "https://automationexercise.com/login"
+                Received: "https://automationexercise.com/"
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/4logoutUser.test.js:17:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670261366694' stop='1670261375250'>
+    <name>TC 11 : Verify Subscription</name>
+    <title>TC 11 : Verify Subscription</title>
+    <test-cases>
+        <test-case start='1670261366695' status='passed' stop='1670261375250'>
+            <name>1 Verify Subscription on Cart Page</name>
+            <title>1 Verify Subscription on Cart Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

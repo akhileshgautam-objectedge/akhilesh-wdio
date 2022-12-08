@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670261033489' stop='1670261048091'>
+    <name>TC 9 :  Search Products</name>
+    <title>TC 9 :  Search Products</title>
+    <test-cases>
+        <test-case start='1670261033491' status='passed' stop='1670261047974'>
+            <name>1 Search Products</name>
+            <title>1 Search Products</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670261047975' status='passed' stop='1670261048090'>
+            <name>2 Verify all the products related to search are visible</name>
+            <title>2 Verify all the products related to search are visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

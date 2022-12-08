@@ -1,0 +1,221 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670237795106' stop='1670237885690'>
+    <name>TC 1 : Register User</name>
+    <title>TC 1 : Register User</title>
+    <test-cases>
+        <test-case start='1670237795108' status='failed' stop='1670237795139'>
+            <name>1 Navigate to URL</name>
+            <title>1 Navigate to URL</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: mainPage.getUrll is not a function</message>
+                <stack-trace>    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:8:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670237795140' status='failed' stop='1670237825319'>
+            <name>2 Enter name and username</name>
+            <title>2 Enter name and username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:15:9)
+                --- End of stack trace ---
+                </message>
+                <stack-trace>Error: CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:15:9)
+                --- End of stack trace ---
+                
+                    at getErrorFromFailedTest (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/utils.js:71:60)
+                    at AllureReporter.onTestFail (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/index.js:228:38)
+                    at AllureReporter.&lt;anonymous> (file:///D:/MY/TestFile/node_modules/@wdio/reporter/build/index.js:118:18)
+                    at AllureReporter.emit (node:events:513:28)
+                    at AllureReporter.emit (node:domain:489:12)
+                    at file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:56
+                    at Array.forEach (&lt;anonymous>)
+                    at BaseReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:25)
+                    at JasmineReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:154:24)
+                    at JasmineReporter.specDone (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:85:14)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7801:23)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7629:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at QueueRunner.execute (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7521:10)
+                    at queueRunnerFactory (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1527:35)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1628:16
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7775:9
+                    at new Promise (&lt;anonymous>)
+                    at dispatch (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7774:14)
+                    at ReportDispatcher.specDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7743:18)
+                    at reportSpecDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1851:16)
+                    at SuiteBuilder.specResultCallback [as specResultCallback_] (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1840:7)
+                    at Spec.resultCallback (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:10061:16)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:869:14)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7640:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at runNext (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7571:16)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7577:11
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7463:9
+                    at onPromiseRejection (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7655:7)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670237825330' status='failed' stop='1670237855554'>
+            <name>3 Filling Address Information</name>
+            <title>3 Filling Address Information</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:21:9)
+                --- End of stack trace ---
+                </message>
+                <stack-trace>Error: CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:21:9)
+                --- End of stack trace ---
+                
+                    at getErrorFromFailedTest (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/utils.js:71:60)
+                    at AllureReporter.onTestFail (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/index.js:228:38)
+                    at AllureReporter.&lt;anonymous> (file:///D:/MY/TestFile/node_modules/@wdio/reporter/build/index.js:118:18)
+                    at AllureReporter.emit (node:events:513:28)
+                    at AllureReporter.emit (node:domain:489:12)
+                    at file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:56
+                    at Array.forEach (&lt;anonymous>)
+                    at BaseReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:25)
+                    at JasmineReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:154:24)
+                    at JasmineReporter.specDone (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:85:14)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7801:23)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7629:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at QueueRunner.execute (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7521:10)
+                    at queueRunnerFactory (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1527:35)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1628:16
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7775:9
+                    at new Promise (&lt;anonymous>)
+                    at dispatch (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7774:14)
+                    at ReportDispatcher.specDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7743:18)
+                    at reportSpecDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1851:16)
+                    at SuiteBuilder.specResultCallback [as specResultCallback_] (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1840:7)
+                    at Spec.resultCallback (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:10061:16)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:869:14)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7640:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at runNext (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7571:16)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7577:11
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7463:9
+                    at onPromiseRejection (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7655:7)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670237855558' status='failed' stop='1670237885682'>
+            <name>4 CLick Delete account</name>
+            <title>4 CLick Delete account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:32:9)
+                --- End of stack trace ---
+                </message>
+                <stack-trace>Error: CompoundError: One or more errors occurred. ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                --- End of stack trace ---
+                
+                        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/1register.test.js:32:9)
+                --- End of stack trace ---
+                
+                    at getErrorFromFailedTest (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/utils.js:71:60)
+                    at AllureReporter.onTestFail (file:///D:/MY/TestFile/node_modules/@wdio/allure-reporter/build/index.js:228:38)
+                    at AllureReporter.&lt;anonymous> (file:///D:/MY/TestFile/node_modules/@wdio/reporter/build/index.js:118:18)
+                    at AllureReporter.emit (node:events:513:28)
+                    at AllureReporter.emit (node:domain:489:12)
+                    at file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:56
+                    at Array.forEach (&lt;anonymous>)
+                    at BaseReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/runner/build/reporter.js:47:25)
+                    at JasmineReporter.emit (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:154:24)
+                    at JasmineReporter.specDone (file:///D:/MY/TestFile/node_modules/@wdio/jasmine-framework/build/reporter.js:85:14)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7801:23)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7629:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at QueueRunner.execute (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7521:10)
+                    at queueRunnerFactory (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1527:35)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1628:16
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7775:9
+                    at new Promise (&lt;anonymous>)
+                    at dispatch (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7774:14)
+                    at ReportDispatcher.specDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7743:18)
+                    at reportSpecDone (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1851:16)
+                    at SuiteBuilder.specResultCallback [as specResultCallback_] (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1840:7)
+                    at Spec.resultCallback (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:10061:16)
+                    at UserContext.fn (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:869:14)
+                    at QueueRunner.attempt (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7640:40)
+                    at QueueRunner.run (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7667:27)
+                    at runNext (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7571:16)
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7577:11
+                    at D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7463:9
+                    at onPromiseRejection (D:\MY\TestFile\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:7655:7)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

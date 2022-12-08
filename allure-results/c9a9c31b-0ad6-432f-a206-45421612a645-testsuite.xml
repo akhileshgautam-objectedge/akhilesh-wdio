@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670494028695' stop='1670494040287'>
+    <name>TC 6 : Contact Us Page</name>
+    <title>TC 6 : Contact Us Page</title>
+    <test-cases>
+        <test-case start='1670494028696' status='passed' stop='1670494039185'>
+            <name>1 Verifying Contact Us Page</name>
+            <title>1 Verifying Contact Us Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670494039185' status='passed' stop='1670494040286'>
+            <name>2 Upload file</name>
+            <title>2 Upload file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

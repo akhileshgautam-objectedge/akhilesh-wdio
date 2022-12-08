@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670299834100' stop='1670299884922'>
+    <name>TC 25: Verify scroll up</name>
+    <title>TC 25: Verify scroll up</title>
+    <test-cases>
+        <test-case start='1670299834101' status='passed' stop='1670299871778'>
+            <name>1  Verify Scroll Up using 'Arrow' button and Scroll Down functionality</name>
+            <title>1  Verify Scroll Up using 'Arrow' button and Scroll Down functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670299871780' status='passed' stop='1670299884919'>
+            <name>2 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</name>
+            <title>2 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

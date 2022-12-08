@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670236699332' stop='1670236725589'>
+    <name>TC 6 : Verifying Contact Us Page</name>
+    <title>TC 6 : Verifying Contact Us Page</title>
+    <test-cases>
+        <test-case start='1670236699333' status='passed' stop='1670236707105'>
+            <name>1 Navigate to URL</name>
+            <title>1 Navigate to URL</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670236707107' status='passed' stop='1670236713680'>
+            <name>2 Click on Contact Us button</name>
+            <title>2 Click on Contact Us button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670236713682' status='passed' stop='1670236714656'>
+            <name>3 Enter name, email, subject and message</name>
+            <title>3 Enter name, email, subject and message</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670236714657' status='passed' stop='1670236715373'>
+            <name>4 Upload file</name>
+            <title>4 Upload file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670236715375' status='failed' stop='1670236725586'>
+            <name>5 Verify success message is visible</name>
+            <title>5 Verify success message is visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect $(`.status.alert`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>error properties: Object({ matcherResult: Object({ pass: false, message: 'Expect $(`.status.alert`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"' }) })
+                Error: Expect $(`.status.alert`) to be displayed
+                Expected: "displayed"
+                Received: "not displayed"
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/6contactUs.test.js:37:42)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670496035278' stop='1670496085263'>
+    <name>TC 15 : Register and Place Order</name>
+    <title>TC 15 : Register and Place Order</title>
+    <test-cases>
+        <test-case start='1670496035280' status='passed' stop='1670496085261'>
+            <name>1 Place Order: Register before Checkout</name>
+            <title>1 Place Order: Register before Checkout</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

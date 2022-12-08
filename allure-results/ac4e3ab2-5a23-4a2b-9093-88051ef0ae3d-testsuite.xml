@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670496936565' stop='1670496956536'>
+    <name>TC 18 : View Category products</name>
+    <title>TC 18 : View Category products</title>
+    <test-cases>
+        <test-case start='1670496936566' status='passed' stop='1670496956535'>
+            <name>1. View Category Products</name>
+            <title>1. View Category Products</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

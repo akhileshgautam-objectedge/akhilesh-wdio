@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670499817261' stop='1670499911662'>
+    <name>TC 23: Verify address details</name>
+    <title>TC 23: Verify address details</title>
+    <test-cases>
+        <test-case start='1670499817263' status='failed' stop='1670499865975'>
+            <name>1  Verify address details in checkout page</name>
+            <title>1  Verify address details in checkout page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-14'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: element ("div>h2>b") still not displayed after 10000ms</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/23verifyAddress.test.js:22:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1670499865976' status='failed' stop='1670499911660'>
+            <name>verify Address</name>
+            <title>verify Address</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-14'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='11acaec7-4e6f-4bcf-ab74-de35f789778a-attachment.png' type='image/png' size='91091'/>
+            </attachments>
+            <failure>
+                <message>Error: Can't call setValue on element with selector "textarea" because element wasn't found</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/23verifyAddress.test.js:58:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

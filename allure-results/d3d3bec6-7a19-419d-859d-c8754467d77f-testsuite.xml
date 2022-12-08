@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670499801654' stop='1670499830561'>
+    <name>TC 21 : Add Review</name>
+    <title>TC 21 : Add Review</title>
+    <test-cases>
+        <test-case start='1670499801656' status='passed' stop='1670499830558'>
+            <name>1  Add review on product</name>
+            <title>1  Add review on product</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

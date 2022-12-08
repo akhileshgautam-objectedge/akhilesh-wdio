@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670348151708' stop='1670348175261'>
+    <name>TC 20 : Search and verify cart</name>
+    <title>TC 20 : Search and verify cart</title>
+    <test-cases>
+        <test-case start='1670348151709' status='failed' stop='1670348175259'>
+            <name>1 Search Products and Verify Cart After Login</name>
+            <title>1 Search Products and Verify Cart After Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect $(`.product-overlay>div>p`) to have text containing
+                
+                Expected: "Blue"
+                Received: ""</message>
+                <stack-trace>error properties: Object({ matcherResult: Object({ pass: false, message: 'Expect $(`.product-overlay>div>p`) to have text containing
+                
+                Expected: "Blue"
+                Received: ""' }) })
+                Error: Expect $(`.product-overlay>div>p`) to have text containing
+                Expected: "Blue"
+                Received: ""
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/20searchAndVerifyCart.test.js:24:51)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

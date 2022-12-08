@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670243831173' stop='1670243850075'>
+    <name>TC 5 : Register existing  User</name>
+    <title>TC 5 : Register existing  User</title>
+    <test-cases>
+        <test-case start='1670243831175' status='passed' stop='1670243850069'>
+            <name>Register existing User</name>
+            <title>Register existing User</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

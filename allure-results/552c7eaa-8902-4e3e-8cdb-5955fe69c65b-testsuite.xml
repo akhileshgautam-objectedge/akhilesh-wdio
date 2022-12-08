@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670500855933' stop='1670500939720'>
+    <name>TC 14 : Place Order</name>
+    <title>TC 14 : Place Order</title>
+    <test-cases>
+        <test-case start='1670500855934' status='failed' stop='1670500939718'>
+            <name>1 Place Order: Register while Checkout</name>
+            <title>1 Place Order: Register while Checkout</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "a[data-qa='continue-button']" because element wasn't found</message>
+                <stack-trace>    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/14placeOrder.test.js:52:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

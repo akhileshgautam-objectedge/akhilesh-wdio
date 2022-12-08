@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670502037897' stop='1670502110862'>
+    <name>TC 23: Verify address details</name>
+    <title>TC 23: Verify address details</title>
+    <test-cases>
+        <test-case start='1670502037901' status='passed' stop='1670502110780'>
+            <name>1  Verify address details in checkout page</name>
+            <title>1  Verify address details in checkout page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670502110781' status='failed' stop='1670502110858'>
+            <name>verify Address and checkout</name>
+            <title>verify Address and checkout</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: mainAddress is not defined</message>
+                <stack-trace>    at UserContext.&lt;anonymous> (D:\MY\TestFile\test\specs\/23verifyAddress.test.js:48:9)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

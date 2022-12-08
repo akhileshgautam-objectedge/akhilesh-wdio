@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670260610360' stop='1670260619209'>
+    <name>TC 7 : Verifying 'Test Cases' Page</name>
+    <title>TC 7 : Verifying 'Test Cases' Page</title>
+    <test-cases>
+        <test-case start='1670260610362' status='passed' stop='1670260616215'>
+            <name>1 Navigate to URL</name>
+            <title>1 Navigate to URL</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1670260616216' status='passed' stop='1670260619208'>
+            <name>2 Click on TestCases button</name>
+            <title>2 Click on TestCases button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.73'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

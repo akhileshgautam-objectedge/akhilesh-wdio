@@ -1,0 +1,28 @@
+{
+  "name": "testfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "@wdio/allure-reporter": "^8.0.0",
+    "@wdio/browser-runner": "^8.0.5",
+    "@wdio/cli": "^8.0.5",
+    "@wdio/jasmine-framework": "^8.0.5",
+    "@wdio/local-runner": "^8.0.5",
+    "@wdio/mocha-framework": "^8.0.2",
+    "@wdio/spec-reporter": "^8.0.0",
+    "chromedriver": "^108.0.0",
+    "wdio-chromedriver-service": "^8.0.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.20.1"
+  }
+}
