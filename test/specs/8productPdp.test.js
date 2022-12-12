@@ -4,12 +4,11 @@ const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
 
-describe("TC 8 :  Verifying Product Description Page", () => {
+describe("TC 8 : Product Description Page", () => {
 
-    it("1 Verify PDP page", async () => {
+    it("1 Verify PDP page is visible successfully", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
-
         await mainPage.productsLink.click();                       //click on products button
         await expect(browser).toHaveUrlContaining('/products');
         await productPage.productList.waitForDisplayed();           //products list is visible

@@ -2,7 +2,7 @@ const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 
-import userData from "../testData/userData";
+import userData from "../../testData/userData";
 describe("TC 1 : Register User", () => {
 
     it("1 Register User", async () => {

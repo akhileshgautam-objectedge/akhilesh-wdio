@@ -1,5 +1,5 @@
 import Page from "./Page";
-import userData from "../testData/userData";
+import userData from "../../testData/userData";
 class CartPageAndCheckout {
 
     get quantity() { return $(".cart_quantity>button"); }

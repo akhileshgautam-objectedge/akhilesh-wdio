@@ -12,10 +12,8 @@ describe("TC 21 : Add Review", () => {
         await mainPage.productsLink.click();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/products');
 
-
         await mainPage.firstProduct.click();
         await expect(pdpPage.reviewText).toHaveText('WRITE YOUR REVIEW');
-
 
         await pdpPage.reviewName.setValue(userData.NAME);
         await pdpPage.reviewEmail.setValue(userData.EMAIL);

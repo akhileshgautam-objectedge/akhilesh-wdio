@@ -1,5 +1,5 @@
 import Page from "./Page";
-import userData from "../testData/userData";
+import userData from "../../testData/userData";
 class loginUser {
     get nameRegister() { return $("input[data-qa='signup-name']"); }
     get emailRegister() { return $("input[data-qa='signup-email']"); }
@@ -13,8 +13,6 @@ class loginUser {
     get signupLabel() { return $('.signup-form h2'); }
 
     get logoutButton() { return $("a[href='/logout']"); }
-
-
 
     get labelNewUser() { return $(".signup-form > h2"); }
     async enterUsername(text) {

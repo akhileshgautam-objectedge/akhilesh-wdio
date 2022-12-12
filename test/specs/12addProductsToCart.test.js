@@ -1,7 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
-describe("TC 12 : Add Products to cart", () => {
+describe("TC 12 : Cart Page", () => {
 
     it("1 Add products to cart", async () => {
         await mainPage.getUrl();

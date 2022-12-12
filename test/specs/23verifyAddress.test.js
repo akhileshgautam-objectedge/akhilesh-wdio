@@ -17,7 +17,6 @@ describe("TC 23: Verify address details", () => {
         await loginPage.emailRegister.setValue(userData.EMAIL);
         await loginPage.buttonRegister.click();
 
-
         const mainAddress = [];
         await $('div>h2>b').waitForDisplayed();//'ENTER ACCOUNT INFORMATION' is visible
         await expect(await $('div>h2>b')).toBeDisplayed();
@@ -30,11 +29,9 @@ describe("TC 23: Verify address details", () => {
         await mainPage.continueButton.click(); //click continue
         await expect(mainPage.loggedInAs).toBeDisplayed();//'Logged in as username' is visible
 
-
         await productPage.product1Cart.click();
         await productPage.continueButton.waitForDisplayed();
         await productPage.continueButton.click();
-
 
         await mainPage.cart.waitForDisplayed();
         await mainPage.cart.click();
@@ -45,12 +42,10 @@ describe("TC 23: Verify address details", () => {
         await cartPage.textArea.setValue('aaaaa');
         await cartPage.placeOrderButton.click();
 
-
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
-
 
         await mainPage.deleteAccount.click();
         await $('h2>b').waitForDisplayed();

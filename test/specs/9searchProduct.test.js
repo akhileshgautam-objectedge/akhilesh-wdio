@@ -2,9 +2,9 @@ const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
 
-describe("TC 9 :  Search Products", () => {
+describe("TC 9 :  Searching Products", () => {
 
-    it("1 Search Products", async () => {
+    it("1 verify Search Products functionality", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
 

@@ -1,13 +1,12 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
-import userData from "../testData/userData";
-describe("TC 11 : Verify Subscription on Cart page", () => {
+import userData from "../../testData/userData";
+describe("TC 11 : Verify Subscription", () => {
 
     it("1 Verify Subscription on Cart Page", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
-
         await mainPage.cart.click();                              //Click cart button
 
         await mainPage.footer.scrollIntoView();                   //Scroll down to footer

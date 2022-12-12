@@ -4,7 +4,7 @@ const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
 const cartPage = require("../pages/cart.page");
-describe("TC 17 : Remove products from cart", () => {
+describe("TC 17 : Verifying cart page", () => {
 
     it("1 Remove Products From Cart", async () => {
         await mainPage.getUrl();
@@ -15,7 +15,6 @@ describe("TC 17 : Remove products from cart", () => {
         await productPage.product1Cart.click();
         await productPage.continueButton.waitForDisplayed();
         await productPage.continueButton.click();
-
 
         await mainPage.cart.click();
         await expect($$('tbody>tr')).toBeElementsArrayOfSize(1);

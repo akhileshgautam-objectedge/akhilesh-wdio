@@ -1,5 +1,5 @@
 import Page from "./Page";
-import userData from "../testData/userData";
+import userData from "../../testData/userData";
 class registerPage {
     get firstName() { return $('#first_name'); }
     get lastName() { return $('#last_name'); }

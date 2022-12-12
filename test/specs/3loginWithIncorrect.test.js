@@ -2,7 +2,7 @@ const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 
-describe("TC 3 : Login with Incorrect Credentials", () => {
+describe("TC 3 : Login User", () => {
 
     it("Login with Incorrect credentials", async () => {
         await mainPage.getUrl();

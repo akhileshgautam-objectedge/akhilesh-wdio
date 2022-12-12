@@ -11,8 +11,8 @@ describe("TC 25: Verify scroll up", () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
 
-        // await mainPage.footer.scrollIntoView();
-        await mainPage.scrollToBottom();
+
+        await mainPage.scrollToBottom();    // await mainPage.footer.scrollIntoView();
 
         await mainPage.subscriptionText.waitForDisplayed();
         await mainPage.subscriptionText.isDisplayed();

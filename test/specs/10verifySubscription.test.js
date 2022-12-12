@@ -1,11 +1,11 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
-import userData from "../testData/userData"
+import userData from "../../testData/userData"
 
 describe("TC 10 : Verify Subscription", () => {
 
-    it("1 Verify Subscription", async () => {
+    it("1 Verify Subscription functionality is working ", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
 

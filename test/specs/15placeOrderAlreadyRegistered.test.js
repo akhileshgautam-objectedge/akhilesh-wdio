@@ -1,11 +1,11 @@
 const mainPage = require("../pages/mainPage.page");
-import userData from "../testData/userData";
+import userData from "../../testData/userData";
 const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
 const cartPage = require("../pages/cart.page");
-describe("TC 15 : Register and Place Order", () => {
+describe("TC 15 :Place Order", () => {
 
     it("1 Place Order: Register before Checkout", async () => {
         await mainPage.getUrl();
@@ -33,7 +33,6 @@ describe("TC 15 : Register and Place Order", () => {
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/view_cart');
         await cartPage.checkOutButton.click();         //propceed to checkout
 
-
         await cartPage.textArea.setValue('aaaaa');
         await cartPage.placeOrderButton.click();
 
@@ -41,7 +40,6 @@ describe("TC 15 : Register and Place Order", () => {
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
-
 
         await mainPage.deleteAccount.click();
         await $('h2>b').waitForDisplayed();

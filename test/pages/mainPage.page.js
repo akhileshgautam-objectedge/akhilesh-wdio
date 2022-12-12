@@ -1,5 +1,5 @@
 import Page from "./Page";
-class mainPage extends Page {
+class mainPage {
     getUrl() { return browser.url("http://automationexercise.com"); }
     getUrlText() { return "https://automationexercise.com"; }
     verifyHome() { return browser.execute(() => document.readyState === 'complete'); }
@@ -43,8 +43,6 @@ class mainPage extends Page {
     get deleteAccount() { return $("a[href='/delete_account']"); }
     get deleteAccount() { return $("a[href='/delete_account']"); }
     get logout() { return $("a[href='/logout']"); }
-
-
 
     //additional
     get continueButton() { return $("a[data-qa='continue-button']"); }

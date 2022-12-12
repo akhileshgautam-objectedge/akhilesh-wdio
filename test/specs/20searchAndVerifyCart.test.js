@@ -12,7 +12,6 @@ describe("TC 20 : Search and verify cart", () => {
         await mainPage.productsLink.click();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/products');
 
-
         await productPage.search.setValue('Blue');
         await productPage.searchButton.click();
 
