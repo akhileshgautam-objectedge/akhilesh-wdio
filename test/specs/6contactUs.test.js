@@ -18,10 +18,7 @@ describe("TC 6 : Contact Us Page", () => {
         await contactPage.email.setValue(userData.EMAIL);
         await contactPage.subject.setValue('anything');
         await contactPage.message.setValue('anything');
-    })
-
-
-    it("2 Upload file", async () => {
+        //UPLOAD FILE
         const fileElement = await contactPage.file;
         const filePath = contactPage.filePath;
         const remoteFilePath = await browser.uploadFile(filePath);
