@@ -1,9 +1,7 @@
-const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 
 describe("TC 2 : Login User", () => {
-
     it("1 Login with correct credentials", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
@@ -13,6 +11,4 @@ describe("TC 2 : Login User", () => {
         await expect(mainPage.loggedInAs).toBeDisplayed();   //'Logged in as username' is visible
         await mainPage.deleteAcc();
     })
-
-
 })

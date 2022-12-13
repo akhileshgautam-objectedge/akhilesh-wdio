@@ -269,32 +269,33 @@ exports.config = {
      */
 
     afterTest: async function (test, context, { error, result, duration, passed, retries }) {
-        // const path = "D:/MY/TestFile/Screenshots/img.png"; //
+        const path = "./Screenshots/img" + new Date().getTime() + ".png"; //
         if (!passed) {
-            browser.takeScreenshot();
+            browser.saveScreenshot(path);
+            // browser.takeScreenshot();
         }
     },
 
-    // onComplete: function () {
-    //     const reportError = new Error('Could not generate Allure report')
-    //     const generation = allure(['generate', 'allure-results', '--clean'])
-    //     return new Promise((resolve, reject) => {
-    //         const generationTimeout = setTimeout(
-    //             () => reject(reportError),
-    //             5000)
+    onComplete: function () {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results', '--clean'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                5000)
 
-    //         generation.on('exit', function (exitCode) {
-    //             clearTimeout(generationTimeout)
+            generation.on('exit', function (exitCode) {
+                clearTimeout(generationTimeout)
 
-    //             if (exitCode !== 0) {
-    //                 return reject(reportError)
-    //             }
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
 
-    //             console.log('Allure report successfully generated')
-    //             resolve()
-    //         })
-    //     })
-    // },
+                console.log('Allure report successfully generated')
+                resolve()
+            })
+        })
+    },
 
     // afterStep: async function (step, scenario, { error, duration, passed }, context) {
     //     if (error) {

@@ -2,11 +2,9 @@ const mainPage = require("../pages/mainPage.page");
 const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
-const pdpPage = require("../pages/pdp.page");
 const cartPage = require("../pages/cart.page");
 import userData from "../testData/userData";
 describe("TC 23: Verify address details", () => {
-
     it("1  Verify address details in checkout page", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
@@ -16,7 +14,6 @@ describe("TC 23: Verify address details", () => {
         await loginPage.nameRegister.setValue(userData.NAME);
         await loginPage.emailRegister.setValue(userData.EMAIL);
         await loginPage.buttonRegister.click();
-
         const mainAddress = [];
         await $('div>h2>b').waitForDisplayed();//'ENTER ACCOUNT INFORMATION' is visible
         await expect(await $('div>h2>b')).toBeDisplayed();
@@ -28,7 +25,6 @@ describe("TC 23: Verify address details", () => {
         await $('h2>b').waitForDisplayed(); //'ACCOUNT CREATED!' is visible
         await mainPage.continueButton.click(); //click continue
         await expect(mainPage.loggedInAs).toBeDisplayed();//'Logged in as username' is visible
-
         await productPage.product1Cart.click();
         await productPage.continueButton.waitForDisplayed();
         await productPage.continueButton.click();
@@ -41,18 +37,15 @@ describe("TC 23: Verify address details", () => {
     it("verify Address and checkout", async () => {
         await cartPage.textArea.setValue('aaaaa');
         await cartPage.placeOrderButton.click();
-
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
-
         await mainPage.deleteAccount.click();
         await $('h2>b').waitForDisplayed();
         await $('h2>b').isDisplayed();
         await mainPage.continueButton.click();
     })
-
 })
 
 

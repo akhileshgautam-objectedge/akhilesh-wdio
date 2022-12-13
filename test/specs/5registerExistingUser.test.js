@@ -3,7 +3,6 @@ const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 import userData from "../../testData/userData";
 describe("TC 5 : Register User", () => {
-
     it("1 Register existing User", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
@@ -15,11 +14,9 @@ describe("TC 5 : Register User", () => {
         await expect(registerPage.label_email_already_exist).toBeDisplayed();
 
     })
-
     it("2 Delete Account", async () => {
         await loginPage.loginFunc();
         await expect(mainPage.loggedInAs).toBeDisplayed();
         await mainPage.deleteAccount.click();
     })
-
 })

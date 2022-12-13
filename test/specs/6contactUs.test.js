@@ -3,17 +3,14 @@ const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 const contactPage = require("../pages/contactUs.page");
 const path = require("path");
-
 import userData from "../testData/userData";
 describe("TC 6 : Contact Us Page", () => {
 
     it("1 Verifying Contact Us Page", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
-
         await mainPage.contactUs.click();
         await expect(contactPage.label_get_in_touch).toBeDisplayed();
-
         await contactPage.name.setValue(userData.NAME);
         await contactPage.email.setValue(userData.EMAIL);
         await contactPage.subject.setValue('anything');
@@ -26,9 +23,6 @@ describe("TC 6 : Contact Us Page", () => {
         await contactPage.submitButton.click();
         await mainPage.enter();
     })
-
-
-
 })
 
 

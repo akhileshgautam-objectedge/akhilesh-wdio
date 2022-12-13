@@ -1,4 +1,3 @@
-import Page from "./Page";
 import userData from "../../testData/userData";
 class loginUser {
     get nameRegister() { return $("input[data-qa='signup-name']"); }
@@ -11,10 +10,9 @@ class loginUser {
 
     get loginLabel() { return $('.login-form h2 '); }
     get signupLabel() { return $('.signup-form h2'); }
-
     get logoutButton() { return $("a[href='/logout']"); }
-
     get labelNewUser() { return $(".signup-form > h2"); }
+
     async enterUsername(text) {
         await this.username.setValue(text);
     }
@@ -35,6 +33,5 @@ class loginUser {
         await this.enterPassword();
         await this.clickLogin();
     }
-
 }
 module.exports = new loginUser();

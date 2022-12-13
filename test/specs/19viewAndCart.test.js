@@ -1,12 +1,6 @@
 const mainPage = require("../pages/mainPage.page");
-const registerPage = require("../pages/register.page");
-const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
-const pdpPage = require("../pages/pdp.page");
-const cartPage = require("../pages/cart.page");
-
 describe("TC 19 : Brand Products", () => {
-
     it("1. View & add to Cart Brand Products", async () => {
         await mainPage.getUrl();
         await expect(mainPage.brands).toBeDisplayed();

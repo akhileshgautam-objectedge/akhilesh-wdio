@@ -1,4 +1,3 @@
-import Page from "./Page";
 import userData from "../../testData/userData";
 class registerPage {
     get firstName() { return $('#first_name'); }
@@ -11,36 +10,29 @@ class registerPage {
     get city() { return $('#city'); }
     get zipcode() { return $('#zipcode'); }
     get mobile() { return $('#mobile_number'); }
+    get days() { return $('#days'); }
+    get months() { return $('#months'); }
+    get years() { return $('#years'); }
+    get gender() { return $('#id_gender1'); }
 
     async createAccount() {
-        await $('#password').setValue(userData.PASSWORD);
-        await $('#days').selectByVisibleText('10');
-        await $('#months').selectByVisibleText('March');
-        await $('#years').selectByVisibleText('1999');
-        await $('#id_gender1').click();
-
-        await $('#first_name').setValue(userData.NAME);
-        await $('#last_name').setValue(userData.LASTNAME);
-        await $('#address1').setValue(userData.ADDRESS1);
-        await $('#address2').setValue(userData.ADDRESS2);
-        await $('#company').setValue(userData.COMPANY);
-        await $('#state').setValue(userData.STATE);
-        await $('#city').setValue(userData.CITY);
-        await $('#zipcode').setValue(userData.ZIPCODE);
-        await $('#mobile_number').setValue(userData.MOBILENUM);
+        await this.password.setValue(userData.PASSWORD);
+        await this.days.selectByVisibleText('10');
+        await this.months.selectByVisibleText('March');
+        await this.years.selectByVisibleText('1999');
+        await this.gender.click();
+        await this.firstName.setValue(userData.NAME);
+        await this.lastName.setValue(userData.LASTNAME);
+        await this.address1.setValue(userData.ADDRESS1);
+        await this.address2.setValue(userData.ADDRESS2);
+        await this.company.setValue(userData.COMPANY);
+        await this.state.setValue(userData.STATE);
+        await this.city.setValue(userData.CITY);
+        await this, this.zipcode.setValue(userData.ZIPCODE);
+        await this.mobile.setValue(userData.MOBILENUM);
         await $("button[data-qa='create-account']").click();
 
     }
-
-
-
-
-
-
-
-
-
-
     get nameOnfirst() {
         return $("input[data-qa='signup-name']")
     }
