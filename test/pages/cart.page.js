@@ -1,13 +1,11 @@
 import Page from "./Page";
 import userData from "../../testData/userData";
 class CartPageAndCheckout {
-
     get quantity() { return $(".cart_quantity>button"); }
     get removeButton() { return $('.fa.fa-times'); }
     get checkOutButton() { return $('.btn.btn-default.check_out'); }
     get textArea() { return $('textarea'); }
     get placeOrderButton() { return $("a[href='/payment']"); }
-
     //payments
     get nameOnCard() { return $("input[data-qa='name-on-card']"); }
     get cardNumber() { return $("input[data-qa='card-number']"); }
@@ -15,7 +13,6 @@ class CartPageAndCheckout {
     get monthExpiry() { return $(".form-control.card-expiry-month"); }
     get yearExpiry() { return $(".form-control.card-expiry-year"); }
     get submitButton() { return $('#submit'); }
-
     //order placed
     get label() { return $('#form>div>div>div>p'); }
     async fillPayment() {

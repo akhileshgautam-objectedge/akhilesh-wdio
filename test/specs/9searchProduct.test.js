@@ -1,8 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
-
-describe("TC 9 :  Searching Products", () => {
-    it("1 verify Search Products functionality", async () => {
+describe("Searching Products", () => {
+    it("TC 10 : verify Search Text functionality", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.productsLink.click();                       //click on products button
@@ -12,7 +11,7 @@ describe("TC 9 :  Searching Products", () => {
         await productPage.search.setValue('Blue');
         await productPage.searchButton.click();
     })
-    it("2 Verify all the products related to search are visible", async () => {
+    it("TC 11: Verify all the products related to search are visible", async () => {
         await productPage.labelSearched.waitForDisplayed();
         await expect(productPage.labelSearched).toBeDisplayed();
         const elem = await productPage.productInfo;

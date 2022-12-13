@@ -1,6 +1,6 @@
 const mainPage = require("../pages/mainPage.page");
-describe("TC 22 : Add to cart ", () => {
-    it("1 Add to cart from Recommended items", async () => {
+describe("Add to cart", () => {
+    it("TC 24 : Add to cart from Recommended items", async () => {
         await mainPage.getUrl();
         await mainPage.recommendedText.scrollIntoView();
         await expect(mainPage.recommendedText).toHaveText('RECOMMENDED ITEMS');

@@ -1,8 +1,8 @@
 const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
 import userData from "../../testData/userData";
-describe("TC 4 : Logout User", () => {
-    it("Signing out  ", async () => {
+describe("Logout User", () => {
+    it("TC 4 : Signing out an existing user", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.login.click();                       //Click on SignUp/Login button

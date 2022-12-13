@@ -1,12 +1,10 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
-
-describe("TC 20 : Search and verify cart", () => {
-    it("1 Search Products and Verify Cart After Login", async () => {
+describe("Search and verify cart", () => {
+    it("TC 22 : Search Products and Verify Cart After Login", async () => {
         await mainPage.getUrl();
         await mainPage.productsLink.click();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/products');
-
         await productPage.search.setValue('Blue');
         await productPage.searchButton.click();
         await productPage.labelSearched.waitForDisplayed();
@@ -15,21 +13,3 @@ describe("TC 20 : Search and verify cart", () => {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-// // const elements = await $$('.product-overlay>div>p');
-// await $('.product-overlay>div>p').waitForDisplayed();
-// await expect($('.product-overlay>div>p')).toHaveTextContaining('Blue');
-//         // for (let i in elements) {
-//         //     await expect(elements[i]).toHaveTextContaining('Blue');
-//         // }

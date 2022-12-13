@@ -1,10 +1,9 @@
 const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const mainPage = require("../pages/mainPage.page");
-
 import userData from "../../testData/userData";
-describe("TC 1 : Register User", () => {
-    it("1 Register a new User", async () => {
+describe("Register User", () => {
+    it("TC 1: Register a new User", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.login.click();                           //Click on SignUp/Login button
@@ -20,24 +19,3 @@ describe("TC 1 : Register User", () => {
         await mainPage.deleteAcc();
     })
 })
-
-
-
-
-
-
-
-
-
-
-// it("4 Enter username and password", async () => {
-//     const name = await $('#form > div > div > div:nth-child(3) > div > form > input[type=text]:nth-child(2)');
-//     const email = await $('#form > div > div > div:nth-child(3) > div > form > input[type=email]:nth-child(3)');
-//     const button = await $('#form > div > div > div:nth-child(3) > div > form > button');
-//     await name.setValue('Test User');
-//     await email.setValue('testuser@mailinator.com');
-//     await button.click();
-// })
-
-// const check_1 = await $('form > div:nth-child(7) > label');
-// const check_2 = await $('form > div:nth-child(8) > label');

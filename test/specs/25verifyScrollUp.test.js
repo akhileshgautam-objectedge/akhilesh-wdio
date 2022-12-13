@@ -1,7 +1,6 @@
 const mainPage = require("../pages/mainPage.page");
-
-describe("TC 25: Verify scroll up", () => {
-    it("1  Verify Scroll Up using 'Arrow' button and Scroll Down functionality", async () => {
+describe("Verify scroll up", () => {
+    it("TC 27 : Verify Scroll Up using 'Arrow' button and Scroll Down functionality", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.scrollToBottom();    // await mainPage.footer.scrollIntoView();
@@ -10,7 +9,7 @@ describe("TC 25: Verify scroll up", () => {
         await mainPage.scrollToTop();
         await expect(mainPage.mainText).toHaveText('Full-Fledged practice website for Automation Engineers');
     })
-    it("2 Verify Scroll Up without 'Arrow' button and Scroll Down functionality", async () => {
+    it("TC 28 : Verify Scroll Up without 'Arrow' button and Scroll Down functionality", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.footer.scrollIntoView();

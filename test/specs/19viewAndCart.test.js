@@ -1,7 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
-describe("TC 19 : Brand Products", () => {
-    it("1. View & add to Cart Brand Products", async () => {
+describe("Brand Products", () => {
+    it("TC 21 : View & add to Cart Brand Products", async () => {
         await mainPage.getUrl();
         await expect(mainPage.brands).toBeDisplayed();
         await mainPage.brandPolo.click();

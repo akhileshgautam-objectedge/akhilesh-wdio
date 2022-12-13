@@ -1,7 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 import userData from "../../testData/userData";
-describe("TC 11 : Verify Subscription", () => {
-    it("1 Verify Subscription on Cart Page", async () => {
+describe("Verify Subscription", () => {
+    it("TC 13 : Verify Subscription on Cart Page", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.cart.click();                              //Click cart button

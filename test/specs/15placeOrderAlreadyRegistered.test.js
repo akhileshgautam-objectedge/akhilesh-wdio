@@ -4,8 +4,8 @@ const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const cartPage = require("../pages/cart.page");
-describe("TC 15 :Place Order", () => {
-    it("1 Place Order: Register before Checkout", async () => {
+describe("Place Order", () => {
+    it("TC 17 : Place Order: Register before Checkout", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.login.click();

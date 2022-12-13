@@ -3,8 +3,8 @@ const mainPage = require("../pages/mainPage.page");
 const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const cartPage = require("../pages/cart.page");
-describe("TC 16 : Place Order", () => {
-    it("1 Place Order: Login before Checkout", async () => {
+describe("Place Order", () => {
+    it("TC 18 : Place Order: Login before Checkout", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.login.click();                       //Click on SignUp/Login button
@@ -32,5 +32,4 @@ describe("TC 16 : Place Order", () => {
         await $('h2>b').isDisplayed();
         await mainPage.continueButton.click();
     })
-
 })

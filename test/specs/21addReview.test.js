@@ -1,12 +1,11 @@
 const mainPage = require("../pages/mainPage.page");
 const pdpPage = require("../pages/pdp.page");
 import userData from "../testData/userData"
-describe("TC 21 : Add Review", () => {
-    it("1  Add review on product", async () => {
+describe("Add Review", () => {
+    it("TC 23 : Add review on product", async () => {
         await mainPage.getUrl();
         await mainPage.productsLink.click();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/products');
-
         await mainPage.firstProduct.click();
         await expect(pdpPage.reviewText).toHaveText('WRITE YOUR REVIEW');
         await pdpPage.reviewName.setValue(userData.NAME);

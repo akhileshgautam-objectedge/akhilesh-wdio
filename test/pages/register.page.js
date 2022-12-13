@@ -28,7 +28,7 @@ class registerPage {
         await this.company.setValue(userData.COMPANY);
         await this.state.setValue(userData.STATE);
         await this.city.setValue(userData.CITY);
-        await this, this.zipcode.setValue(userData.ZIPCODE);
+        await this.zipcode.setValue(userData.ZIPCODE);
         await this.mobile.setValue(userData.MOBILENUM);
         await $("button[data-qa='create-account']").click();
 

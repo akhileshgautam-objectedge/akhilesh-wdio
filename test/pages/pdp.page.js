@@ -10,5 +10,6 @@ class pdpPage {
     get reviewEmail() { return $('#email'); }
     get review() { return $('#review'); }
     get reviewSubmit() { return $('#button-review'); }
+    get conditionDetail() { return $$('div>p>b')[1]; }
 }
 module.exports = new pdpPage();

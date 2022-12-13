@@ -1,8 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 import userData from "../../testData/userData"
-
-describe("TC 10 : Verify Subscription", () => {
-    it("1 Verify Subscription functionality is working ", async () => {
+describe("Verify Subscription", () => {
+    it("TC 12 : Verify Subscription functionality is working ", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.footer.scrollIntoView();                   //Scroll down to footer

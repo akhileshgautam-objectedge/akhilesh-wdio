@@ -4,8 +4,8 @@ const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const cartPage = require("../pages/cart.page");
 import userData from "../../testData/userData";
-describe("TC 24: Download Invoice", () => {
-    it("1  Download Invoice after purchase order", async () => {
+describe("Download Invoice", () => {
+    it("TC 26 : Download Invoice after purchase order", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await productPage.product1Cart.click();
@@ -27,9 +27,9 @@ describe("TC 24: Download Invoice", () => {
         await $('h2>b').waitForDisplayed(); //'ACCOUNT CREATED!' is visible
         await mainPage.continueButton.click(); //click continue
         await expect(mainPage.loggedInAs).toBeDisplayed();//'Logged in as username' is visible
-
+        //Proceed To Checkout
         await mainPage.cart.click();
-        await cartPage.checkOutButton.click();    //Proceed To Checkout
+        await cartPage.checkOutButton.click();
         await cartPage.textArea.setValue('aaaaa');
         await cartPage.placeOrderButton.click();
         await cartPage.fillPayment();

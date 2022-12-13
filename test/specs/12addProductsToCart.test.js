@@ -1,7 +1,7 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
-describe("TC 12 : Cart Page", () => {
-    it("1 Add products to cart", async () => {
+describe("Cart Page", () => {
+    it("TC 14 :Verifty Add products to cart functionality", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.productsLink.click();                                //Click products button

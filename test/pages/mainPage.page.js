@@ -1,4 +1,3 @@
-import Page from "./Page";
 class mainPage {
     getUrl() { return browser.url("http://automationexercise.com"); }
     getUrlText() { return "https://automationexercise.com"; }
@@ -11,22 +10,16 @@ class mainPage {
     get productsLink() { return $("a[href='/products']"); }
     get incorrectEmailLabel() { return $('form > p[style="color: red;"]'); }
     get testCase() { return $("a[href='/test_cases']"); }
-
-
     get mainText() { return $('.col-sm-6>h2'); }
     get scrollUp() { return $('#scrollUp'); }
-
     get subscriptionText() { return $('.single-widget>h2 '); }
     get submitButton() { return $("#subscribe"); }
     get subscribeEmail() { return $('#susbscribe_email'); }
     get successMessage() { return $('div.alert-success.alert'); }
-
     get header() { return $('#header'); }
     get footer() { return $('#footer'); }
-
     get recommendedText() { return $('.recommended_items>.title.text-center'); }
     get recommendedProduct() { return $(".recommended_items a[data-product-id='4']"); }
-
     get firstProduct() { return $("a[href='/product_details/1']") }
     get category() { return $('.panel-group.category-products'); }
     get brands() { return $('.brands-name'); }
@@ -37,13 +30,11 @@ class mainPage {
     get tshirt() { return $('#Men > div > ul > li:nth-child(1) > a'); }
     get brandPolo() { return $("a[href='/brand_products/Polo']"); }
     get brandHM() { return $("a[href='/brand_products/H&M']"); }
-
     //after login
     get loggedInAs() { return $('.fa.fa-user') };
     get deleteAccount() { return $("a[href='/delete_account']"); }
     get deleteAccount() { return $("a[href='/delete_account']"); }
     get logout() { return $("a[href='/logout']"); }
-
     //additional
     get continueButton() { return $("a[data-qa='continue-button']"); }
     get continueTo() { return $("button[data-dismiss='modal']"); }
@@ -73,8 +64,8 @@ class mainPage {
         await $('h2>b').isDisplayed();               //'ACCOUNT DELETED!' is visible
         await $('.btn.btn-primary').click();         //click Continue
     }
-
+    async verifyTextOnElement(element, text) {
+        await expect(element).toHaveTextContaining(text);
+    }
 }
-
-
 module.exports = new mainPage();

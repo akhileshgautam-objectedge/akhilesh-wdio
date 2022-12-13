@@ -1,8 +1,8 @@
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
-describe("TC 8 : Product Description Page", () => {
-    it("1 Verify PDP page is visible successfully", async () => {
+describe("Product Description Page", () => {
+    it("TC 8 : Verify PDP page is visible successfully", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.productsLink.click();                       //click on products button
@@ -12,12 +12,11 @@ describe("TC 8 : Product Description Page", () => {
         await productPage.firstProduct.click();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/product_details/1');
     })
-    it("2 Verify that product detail is visible: product name, category, price, availability, condition, brand", async () => {
-        // await pdpPage.productName.waitForDisplayed();
+    it("TC 9: Verify that product detail is visible: product name, category, price, availability, condition, brand", async () => {
         await expect(pdpPage.productName).toBeDisplayed();
         await expect(pdpPage.productCategory).toBeDisplayed();
         await expect(pdpPage.productPrice).toBeDisplayed();
         await expect(pdpPage.productAvailability).toBeDisplayed();
-        await expect($$('div>p>b')[1]).toHaveText('Condition:');
+        await mainPage.verifyTextOnElement(pdpPage.conditionDetail, 'Condition');
     })
 })
