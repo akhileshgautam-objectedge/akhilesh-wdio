@@ -37,6 +37,5 @@ describe("Download Invoice", () => {
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
         await mainPage.deleteAccount.click();
-        await $('h2>b').waitForDisplayed();
     })
 })

@@ -39,31 +39,6 @@ describe("Checkout Page", () => {
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
         await mainPage.deleteAccount.click();
-        await $('h2>b').waitForDisplayed();
-        await $('h2>b').isDisplayed();
         await mainPage.continueButton.click();
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-// const address = await $$('ul#address_delivery>li[class="address_address1 address_address2"]').map(function (element) {
-        //     return element.getText();
-        // })
-        // mainAddress.sort();
-        // address.sort();
-        // if (JSON.stringify(mainAddress) === JSON.stringify(address)) {
-        //     console.log('Address verified')
-        // }
-        // else {
-        //     throw 'Address mismatch!'
-        // }
