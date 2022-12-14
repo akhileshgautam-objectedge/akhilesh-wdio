@@ -13,7 +13,7 @@ describe("Download Invoice", () => {
         await productPage.continueButton.click();
         await mainPage.cart.waitForDisplayed();
         await mainPage.cart.click();
-        await expect(browser).toHaveUrlContaining('/view_cart');
+        await mainPage.verifyCurrentUrl('/view_cart')
         await cartPage.checkOutButton.click();         //propceed to checkout
         await mainPage.loginContinue.waitForDisplayed();
         await mainPage.loginContinue.click();
@@ -22,7 +22,6 @@ describe("Download Invoice", () => {
         await loginPage.buttonRegister.click();
 
         await registerPage.createAccount();
-        await $('h2>b').waitForDisplayed(); //'ACCOUNT CREATED!' is visible
         await mainPage.continueButton.click(); //click continue
         await expect(mainPage.loggedInAs).toBeDisplayed();//'Logged in as username' is visible
         //Proceed To Checkout

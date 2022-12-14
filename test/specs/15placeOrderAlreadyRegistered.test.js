@@ -27,7 +27,7 @@ describe("Place Order", () => {
         await mainPage.verifyCurrentUrl('/view_cart');
         await cartPage.checkOutButton.click();         //propceed to checkout
 
-        await cartPage.textArea.setValue('aaaaa');
+        await cartPage.textArea.setValue('a');
         await cartPage.placeOrderButton.click();
         await cartPage.fillPayment();
         await cartPage.submitButton.click();

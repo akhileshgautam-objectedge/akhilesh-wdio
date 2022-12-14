@@ -5,9 +5,9 @@ describe("Add Review", () => {
     it("TC 23 : Add review on product", async () => {
         await mainPage.getUrl();
         await mainPage.productsLink.click();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/products');
+        await mainPage.verifyCurrentUrl('/products');
         await mainPage.firstProduct.click();
-        await expect(pdpPage.reviewText).toHaveText('WRITE YOUR REVIEW');
+        await mainPage.verifyTextOnElement(pdpPage.reviewText, 'WRITE YOUR REVIEW');
         await pdpPage.reviewName.setValue(userData.NAME);
         await pdpPage.reviewEmail.setValue(userData.EMAIL);
         await pdpPage.review.setValue('this is review text');

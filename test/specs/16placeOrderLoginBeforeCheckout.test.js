@@ -26,7 +26,7 @@ describe("Place Order", () => {
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
-        await expect(cartPage.label).toHaveTextContaining('Congratulations! Your order has been confirmed!')
+        await mainPage.verifyTextOnElement(cartPage.label, 'Congratulations!');
         await mainPage.deleteAccount.click();
         await mainPage.continueButton.click();
     })

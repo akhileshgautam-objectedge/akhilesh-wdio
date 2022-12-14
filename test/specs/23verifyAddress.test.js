@@ -3,6 +3,7 @@ const registerPage = require("../pages/register.page");
 const loginPage = require("../pages/loginUser.page");
 const productPage = require("../pages/product.page");
 const cartPage = require("../pages/cart.page");
+import { cart } from "../pages/mainPage.page";
 import userData from "../testData/userData";
 describe("Checkout Page", () => {
     it("TC 25 : Verify address details in checkout page", async () => {
@@ -15,8 +16,6 @@ describe("Checkout Page", () => {
         await loginPage.emailRegister.setValue(userData.EMAIL);
         await loginPage.buttonRegister.click();
         const mainAddress = [];
-        await $('div>h2>b').waitForDisplayed();//'ENTER ACCOUNT INFORMATION' is visible
-        await expect(await $('div>h2>b')).toBeDisplayed();
         await registerPage.createAccount();
         mainAddress.push(userData.COMPANY);
         mainAddress.push(userData.ADDRESS1);
@@ -29,7 +28,7 @@ describe("Checkout Page", () => {
         await productPage.continueButton.click();
         await mainPage.cart.waitForDisplayed();
         await mainPage.cart.click();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/view_cart');
+        await mainPage.verifyCurrentUrl('/view_cart')
         await cartPage.checkOutButton.click();         //propceed to checkout
         //verify Address and checkout
         await cartPage.textArea.setValue('aaaaa');
@@ -37,7 +36,7 @@ describe("Checkout Page", () => {
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
-        await expect(cartPage.label).toHaveTextContaining('Congratulations!')
+        await mainPage.verifyTextOnElement(cartPage.label, 'Congratulations!')
         await mainPage.deleteAccount.click();
         await mainPage.continueButton.click();
     })

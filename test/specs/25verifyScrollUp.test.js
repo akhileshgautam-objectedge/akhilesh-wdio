@@ -7,7 +7,7 @@ describe("Verify scroll up", () => {
         await mainPage.subscriptionText.waitForDisplayed();
         await mainPage.subscriptionText.isDisplayed();
         await mainPage.scrollToTop();
-        await expect(mainPage.mainText).toHaveText('Full-Fledged practice website for Automation Engineers');
+        await mainPage.verifyTextOnElement(mainPage.mainText, 'Full-Fledged');
     })
     it("TC 28 : Verify Scroll Up without 'Arrow' button and Scroll Down functionality", async () => {
         await mainPage.getUrl();
@@ -16,6 +16,6 @@ describe("Verify scroll up", () => {
         await mainPage.subscriptionText.waitForDisplayed();
         await mainPage.subscriptionText.isDisplayed();
         await mainPage.scrollUp.click();
-        await expect(mainPage.mainText).toHaveText('Full-Fledged practice website for Automation Engineers');
+        await mainPage.verifyTextOnElement(mainPage.mainText, 'Full-Fledged');
     })
 })
