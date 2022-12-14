@@ -12,6 +12,6 @@ describe("Add Review", () => {
         await pdpPage.reviewEmail.setValue(userData.EMAIL);
         await pdpPage.review.setValue('this is review text');
         await pdpPage.reviewSubmit.click();
-        await expect($('.alert-success.alert > span')).toBeDisplayed();
+        await expect(mainPage.success_message).toBeDisplayed();
     })
 })

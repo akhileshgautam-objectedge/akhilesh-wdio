@@ -15,7 +15,6 @@ describe("Searching Products", () => {
         await productPage.labelSearched.waitForDisplayed();
         await expect(productPage.labelSearched).toBeDisplayed();
         const elem = await productPage.productInfo;
-        const products = await $$(".product-image-wrapper");
         await expect(elem).toHaveTextContaining('Blue');
     })
 })

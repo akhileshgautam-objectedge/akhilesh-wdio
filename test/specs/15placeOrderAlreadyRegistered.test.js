@@ -13,8 +13,6 @@ describe("Place Order", () => {
         await loginPage.emailRegister.setValue(userData.EMAIL);
         await loginPage.buttonRegister.click();
 
-        await $('div>h2>b').waitForDisplayed();
-        await expect(await $('div>h2>b')).toBeDisplayed();
         await registerPage.createAccount();
         await expect(browser).toHaveUrl(mainPage.getUrlText() + '/account_created');
         await $('h2>b').waitForDisplayed();
@@ -36,7 +34,5 @@ describe("Place Order", () => {
         await cartPage.label.waitForDisplayed();
         await expect(cartPage.label).toHaveTextContaining('Congratulations!')
         await mainPage.deleteAccount.click();
-        await $('h2>b').waitForDisplayed();
-        await $('h2>b').isDisplayed();
     })
 })

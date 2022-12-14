@@ -1,3 +1,4 @@
+const { verifyHome } = require("../pages/mainPage.page");
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 describe("Search and verify cart", () => {
@@ -8,7 +9,7 @@ describe("Search and verify cart", () => {
         await productPage.search.setValue('Blue');
         await productPage.searchButton.click();
         await productPage.labelSearched.waitForDisplayed();
-        await expect(productPage.labelSearched).toHaveTextContaining("SEARCHED PRODUCTS");
+        await mainPage.verifyTextOnElement(productPage.labelSearched, "SEARCHED PRODUCTS")
         await expect(productPage.products).toBeDisplayed();
     })
 })

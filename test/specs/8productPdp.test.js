@@ -10,7 +10,7 @@ describe("Product Description Page", () => {
         await productPage.productList.waitForDisplayed();           //products list is visible
         await productPage.productList.isDisplayed();
         await productPage.firstProduct.click();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/product_details/1');
+        await expect(browser).toHaveUrlContaining('/product_details/1');
     })
     it("TC 9: Verify that product detail is visible: product name, category, price, availability, condition, brand", async () => {
         await expect(pdpPage.productName).toBeDisplayed();

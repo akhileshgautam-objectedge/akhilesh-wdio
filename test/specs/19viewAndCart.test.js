@@ -5,7 +5,7 @@ describe("Brand Products", () => {
         await mainPage.getUrl();
         await expect(mainPage.brands).toBeDisplayed();
         await mainPage.brandPolo.click();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/brand_products/Polo');
+        await expect(browser).toHaveUrlContaining('/brand_products/Polo');
         await expect(productPage.productList).toBeDisplayed();
         await mainPage.brandHM.click();
         await expect(browser).toHaveUrlContaining('/brand_products/H&M');

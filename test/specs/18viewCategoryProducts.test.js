@@ -7,7 +7,7 @@ describe("Category products", () => {
         await mainPage.categoryWomen.click();
         await mainPage.dress.click();
         await expect(browser).toHaveUrlContaining('/category_products/1');
-        await expect($('.title.text-center')).toHaveText('WOMEN - DRESS PRODUCTS');
+        await mainPage.verifyTextOnElement($('.title.text-center'), 'WOMEN - DRESS PRODUCTS')
         await mainPage.categoryMen.click();
         await mainPage.tshirt.click();
         await expect(browser).toHaveUrlContaining('/category_products/3');

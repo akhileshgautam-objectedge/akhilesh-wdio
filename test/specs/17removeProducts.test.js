@@ -14,6 +14,6 @@ describe("Cart page", () => {
         await expect($$('tbody>tr')).toBeElementsArrayOfSize(1);
         await cartPage.removeButton.click();
         await $('span>p>b').waitForDisplayed();
-        await expect($('span>p>b')).toHaveText('Cart is empty!');  //product is removed
+        await mainPage.verifyTextOnElement($('span>p>b'), 'Cart is empty!')
     })
 })

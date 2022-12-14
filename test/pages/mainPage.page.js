@@ -20,6 +20,7 @@ class mainPage {
     get submitButton() { return $("#subscribe"); }
     get subscribeEmail() { return $('#susbscribe_email'); }
     get successMessage() { return $('div.alert-success.alert'); }
+    get success_message() { $('.alert-success.alert > span'); }
 
     get recommendedText() { return $('.recommended_items>.title.text-center'); }
     get recommendedProduct() { return $(".recommended_items a[data-product-id='4']"); }

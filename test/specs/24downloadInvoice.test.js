@@ -21,8 +21,6 @@ describe("Download Invoice", () => {
         await loginPage.emailRegister.setValue(userData.EMAIL);
         await loginPage.buttonRegister.click();
 
-        await $('div>h2>b').waitForDisplayed();//'ENTER ACCOUNT INFORMATION' is visible
-        await expect(await $('div>h2>b')).toBeDisplayed();
         await registerPage.createAccount();
         await $('h2>b').waitForDisplayed(); //'ACCOUNT CREATED!' is visible
         await mainPage.continueButton.click(); //click continue
@@ -35,7 +33,7 @@ describe("Download Invoice", () => {
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
-        await expect(cartPage.label).toHaveTextContaining('Congratulations!')
+        await mainPage.verifyTextOnElement(cartPage.label, 'Congratulations!')
         await mainPage.deleteAccount.click();
     })
 })
