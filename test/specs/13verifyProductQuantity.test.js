@@ -2,7 +2,7 @@ const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 const pdpPage = require("../pages/pdp.page");
 import cartPage from "../pages/cart.page";
-describe("Vreify Product description Page", () => {
+describe("Product description Page", () => {
     it("TC 15 : Verify Product Quantity", async () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
