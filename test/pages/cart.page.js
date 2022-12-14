@@ -15,19 +15,20 @@ class CartPageAndCheckout {
     get submitButton() { return $('#submit'); }
     //order placed
     get label() { return $('#form>div>div>div>p'); }
+
     async fillPayment() {
-        await $("input[data-qa='name-on-card']").setValue(userData.NAME);
-        await $("input[data-qa='card-number']").setValue(userData.CARDNUM);
-        await $("input[data-qa='cvc']").setValue(userData.CVC);
-        await $(".form-control.card-expiry-month").setValue('01');
-        await $(".form-control.card-expiry-year").setValue('2026');
+        await this.nameOnCard.setValue(userData.NAME);
+        await this.cardNumber.setValue(userData.CARDNUM);
+        await this.cvc.setValue(userData.CVC);
+        await this.monthExpiry.setValue('01');
+        await this.yearExpiry.setValue('2026');
     }
-    async fillPaymentDetails(name, cardnumber, cvc, month, year) {
-        await $("input[data-qa='name-on-card']").setValue(name);
-        await $("input[data-qa='card-number']").setValue(cardnumber);
-        await $("input[data-qa='cvc']").setValue(cvc);
-        await $(".form-control.card-expiry-month").setValue(month);
-        await $(".form-control.card-expiry-year").setValue(year);
+    async fillPaymentDetails(name, cardnum, cvc, month, year) {
+        await this.nameOnCard.setValue(name);
+        await this.cardNumber.setValue(cardnum);
+        await this.cvc.setValue(cvc);
+        await this.monthExpiry.setValue(month);
+        await this.yearExpiry.setValue(year);
     }
     async open() { return Page.open(); }
     //download
