@@ -4,6 +4,6 @@ describe("Test Cases", () => {
         await mainPage.getUrl();
         await mainPage.verifyHome();
         await mainPage.testCase.click();
-        await expect(browser).toHaveUrlContaining('/test_cases');
+        await mainPage.verifyCurrentUrl('/test_cases');
     })
 })

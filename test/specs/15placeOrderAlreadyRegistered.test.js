@@ -14,7 +14,7 @@ describe("Place Order", () => {
         await loginPage.buttonRegister.click();
 
         await registerPage.createAccount();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/account_created');
+        await mainPage.verifyCurrentUrl('/account_created');
         await $('h2>b').waitForDisplayed();
         await mainPage.continueButton.click();
         await expect(mainPage.loggedInAs).toBeDisplayed();
@@ -24,7 +24,7 @@ describe("Place Order", () => {
         await productPage.continueButton.click();
         await mainPage.cart.waitForDisplayed();
         await mainPage.cart.click();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/view_cart');
+        await mainPage.verifyCurrentUrl('/view_cart');
         await cartPage.checkOutButton.click();         //propceed to checkout
 
         await cartPage.textArea.setValue('aaaaa');
@@ -32,7 +32,7 @@ describe("Place Order", () => {
         await cartPage.fillPayment();
         await cartPage.submitButton.click();
         await cartPage.label.waitForDisplayed();
-        await expect(cartPage.label).toHaveTextContaining('Congratulations!')
+        await mainPage.verifyTextOnElement(cartPage.label, 'Congratulations!');
         await mainPage.deleteAccount.click();
     })
 })

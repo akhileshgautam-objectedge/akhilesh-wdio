@@ -12,7 +12,7 @@ describe("Place Order", () => {
         await productPage.continueButton.waitForDisplayed();
         await productPage.continueButton.click();
         await mainPage.cart.click();
-        await expect(browser).toHaveUrlContaining('/view_cart');
+        await mainPage.verifyCurrentUrl('/view_cart');
         await cartPage.checkOutButton.click();
 
         await mainPage.loginContinue.waitForDisplayed();
@@ -24,7 +24,7 @@ describe("Place Order", () => {
         await $('div>h2>b').waitForDisplayed();             //'ENTER ACCOUNT INFORMATION' is visible
         await expect(await $('div>h2>b')).toBeDisplayed();
         await registerPage.createAccount();
-        await expect(browser).toHaveUrl(mainPage.getUrlText() + '/account_created');
+        await mainPage.verifyCurrentUrl('/account_created');
 
         await $('h2>b').waitForDisplayed();                 //'ACCOUNT CREATED!' is visible
         await mainPage.continueButton.click();              //click continue

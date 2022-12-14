@@ -70,5 +70,8 @@ class mainPage {
     async verifyTextOnElement(element, text) {
         await expect(element).toHaveTextContaining(text);
     }
+    async verifyCurrentUrl(url) {
+        await expect(browser).toHaveUrlContaining(url);
+    }
 }
 module.exports = new mainPage();

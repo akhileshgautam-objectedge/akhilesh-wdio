@@ -6,6 +6,7 @@ class CartPageAndCheckout {
     get checkOutButton() { return $('.btn.btn-default.check_out'); }
     get textArea() { return $('textarea'); }
     get placeOrderButton() { return $("a[href='/payment']"); }
+    get cartElements() { return $$('tbody>tr'); }
     //payments
     get nameOnCard() { return $("input[data-qa='name-on-card']"); }
     get cardNumber() { return $("input[data-qa='card-number']"); }
