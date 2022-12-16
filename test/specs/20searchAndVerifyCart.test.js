@@ -1,4 +1,3 @@
-const { verifyHome } = require("../pages/mainPage.page");
 const mainPage = require("../pages/mainPage.page");
 const productPage = require("../pages/product.page");
 describe("Search and verify cart", () => {
